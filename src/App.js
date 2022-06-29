@@ -1,22 +1,33 @@
-import About from "./components/About";
-// import AllInOne from './components/AllInOne';
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import Pricing from "./components/Pricing";
-import Support from "./components/Support";
+import Home from "./pages/Home";
+import React from "react";
+
+// import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/Home";
+import AuthComponent from "./pages/Auth";
+import LoginProvider from "./context/auth/main";
+import Api from "./components/Api";
+
+// import {
+//   Navbar,
+//   Hero,
+//   RequestTable,
+//   ResponseTable,
+//   Footer,
+//   UrlInput,
+// } from "./index";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <About />
-      <Support />
-
-      <Pricing />
-      <Footer />
-    </>
+    <LoginProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="auth" element={<AuthComponent />} />
+          <Route path="api" element={<Api />} />
+        </Routes>
+      </BrowserRouter>
+    </LoginProvider>
   );
 }
 

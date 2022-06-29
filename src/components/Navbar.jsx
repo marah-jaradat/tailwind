@@ -20,31 +20,12 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li>
-              <Link to="support" smooth={true} offset={-50} duration={500}>
-                API-Checker
-              </Link>
-            </li>
-            <li>
-              <Link to="about" smooth={true} offset={-200} duration={500}>
-                About
-              </Link>
-            </li>
-
-            <li>
-              <Link to="pricing" smooth={true} offset={-50} duration={500}>
-                Pricing
-              </Link>
-            </li>
-            <li>
-              <Link to="home" smooth={true} duration={500}>
-                Contact
-              </Link>
-            </li>
           </ul>
         </div>
         <div className="hidden md:flex pr-4">
-          <button className="px-8 py-3">Sign Up</button>
+          <button className="border-none bg-transparent text-black mr-4">
+            API-Checker
+          </button>
         </div>
         <div className="md:hidden mr-4" onClick={handleClick}>
           {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
@@ -76,7 +57,7 @@ const Navbar = () => {
             offset={-50}
             duration={500}
           >
-            API-Checker
+            Services
           </Link>
         </li>
 
@@ -92,20 +73,11 @@ const Navbar = () => {
           </Link>
         </li>
 
-        <li className="border-b-2 border-zinc-300 w-full">
-          <Link
-            onClick={handleClose}
-            to="contact"
-            smooth={true}
-            offset={-50}
-            duration={500}
-          >
-            Contact Us
-          </Link>
-        </li>
-
         <div className="flex flex-col my-4">
-          <button className="px-8 py-3">Sign Up</button>
+          <button className="bg-transparent text-indigo-600 px-8 py-3 mb-4">
+            API-Checker
+          </button>
+          <button className="px-8 py-3">Sign In</button>
         </div>
       </ul>
     </div>

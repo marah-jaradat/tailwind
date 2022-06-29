@@ -94,45 +94,6 @@ const Pricing = () => {
               <button className="w-full py-4 my-4">Get Started</button>
             </div>
           </div>
-          <div className="bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative">
-            <span className="uppercase px-3 py-1 bg-indigo-200 text-indigo-900 rounded-2xl text-sm">
-              Premium
-            </span>
-            <div>
-              <p className="text-6xl font-bold py-4 flex">
-                $99
-                <span className="text-xl text-slate-500 flex flex-col justify-end">
-                  /mo
-                </span>
-              </p>
-            </div>
-            <p className="text-2xl py-8 text-slate-500">
-              Be premium and get ulimited benifits
-            </p>
-            <div className="text-2xl">
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />1 yr free live
-                chating
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />1 yr live
-                supporting calls
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                1000 work spaces
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                unlimited requests and saved history
-              </p>
-              <p className="flex py-4">
-                <CheckIcon className="w-8 mr-5 text-green-600" />
-                unlimited url check
-              </p>
-              <button className="w-full py-4 my-4">Get Started</button>
-            </div>
-          </div>
         </div>
       </div>
     </div>
